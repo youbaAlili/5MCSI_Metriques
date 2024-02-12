@@ -13,7 +13,7 @@ def MaPremiereAPI():
 
 @app.route("/paris/")
 def meteo():
-    response = urlopen('https://api.openweathermap.org/data/2.5/forecast/daily?q=Paris,fr&cnt=16&appid=bd5e378503939ddaee76f12ad7a97608')
+    response = urlopen('https://developers-dot-devsite-v2-prod.appspot.com/chart/interactive/docs/gallery?hl=fr')
     raw_content = response.read()
     json_content = json.loads(raw_content.decode('utf-8'))
     results = []
