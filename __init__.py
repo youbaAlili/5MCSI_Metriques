@@ -7,7 +7,7 @@ import sqlite3
                                                                                                                                        
 app = Flask(__name__)  
 
-@app.route('/yalili.alwaysdata.net/contact/')
+@app.route("/contact/")
 def MaPremiereAPI():
     return "<h2>Ma page de contact</h2>"
 
