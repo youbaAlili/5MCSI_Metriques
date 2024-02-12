@@ -11,6 +11,10 @@ app = Flask(__name__)
 def MaPremiereAPI():
     return "<h2>Ma page de contact</h2>"
 
+@app.route("/rapport/")
+def mongraphique():
+    return render_template("graphique.html")
+
 @app.route("/paris/")
 def meteo():
     response = urlopen('https://developers-dot-devsite-v2-prod.appspot.com/chart/interactive/docs/gallery?hl=fr')
